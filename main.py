@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 print('Welcome To My App')
 print('If this is your first time here type "register", or "login" if you have an account')
 
-url = 'mongodb://admin:admin@cluster-shard-00-00.ng0in.mongodb.net:27017,cluster-shard-00-01.ng0in.mongodb.net:27017,cluster-shard-00-02.ng0in.mongodb.net:27017/users?ssl=true&replicaSet=atlas-bm2t5j-shard-0&authSource=admin&retryWrites=true&w=majority'
+url = '' # Mongo db url
 client = MongoClient(url)
 users_info = client.users.users_info
 
